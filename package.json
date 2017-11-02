@@ -1,6 +1,6 @@
 {
   "name": "iview-datepicker-mi",
-  "version": "0.0.2",
+  "version": "0.0.7",
   "description": "This is a datepicker extra components.",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,8 @@
   "license": "MIT",
   "dependencies": {
     "vue": "^2.4.4",
-    "iview": "^2.3.2"
+    "iview": "^2.3.2",
+    "moment":"^2.19.1"
   },
   "bugs": {
     "url": "https://github.com/sumerliu/iview-datepicker-mi/issues"

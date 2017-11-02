@@ -7,9 +7,9 @@
 </template>
 <script>
     import {getFirstDayOfMonth, getDayCountOfMonth } from '../util';
-    import { deepCopy } from '../../date-picker/utils/assist';
-    import Locale from '../../date-picker/mixins/locale';
-    import moment from '../../../../node_modules/moment';
+    import { deepCopy } from '../utils/assist';
+    import Locale from '../mixins/locale';
+    import moment from 'moment';
     moment.locale('zh-cn');
 
     const prefixCls = 'ivu-date-picker-cells';
@@ -87,7 +87,6 @@
         },
         methods: {
             handleClick (cell) {
-                debugger;
                 const target = event.target;
                 if (target.tagName === 'SPAN') {
                     cell.selected=true;

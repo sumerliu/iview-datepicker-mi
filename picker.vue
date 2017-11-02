@@ -35,13 +35,13 @@
 </template>
 <script>
     import Vue from 'vue';
-    import iInput from './ivew-componets/input/input.vue';
-    import Drop from './ivew-componets/select/dropdown.vue';
-    import clickoutside from '../date-picker/directives/clickoutside';
-    import TransferDom from '../date-picker/directives/transfer-dom';
-    import { oneOf } from '../date-picker/utils/assist';
+    import iInput from './iview-componets/input/input.vue';
+    import Drop from './iview-componets/select/dropdown.vue';
+    import clickoutside from './directives/clickoutside';
+    import TransferDom from './directives/transfer-dom';
+    import { oneOf } from './utils/assist';
     import { formatDate, parseDate } from './util';
-    import Emitter from '../date-picker/mixins/emitter';
+    import Emitter from './mixins/emitter';
 
     const prefixCls = 'ivu-date-picker';
 
@@ -262,7 +262,6 @@
                 },
 
                 set (value) {
-                    debugger;
                     if (value) {
                         const type = this.type;
                         const parser = (
@@ -499,7 +498,6 @@
                 this.$emit('input', val);
             },
             value (val) {
-                debugger;
                 this.currentValue = val;
             },
             currentValue: {

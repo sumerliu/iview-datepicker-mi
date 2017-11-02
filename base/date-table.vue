@@ -8,8 +8,8 @@
 </template>
 <script>
     import { getFirstDayOfMonth, getDayCountOfMonth } from '../util';
-    import { deepCopy } from '../../date-picker/utils/assist';
-    import Locale from '../../date-picker/mixins/locale';
+    import { deepCopy } from '../utils/assist';
+    import Locale from '../mixins/locale';
 
     const prefixCls = 'ivu-date-picker-cells';
 

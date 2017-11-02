@@ -4,8 +4,8 @@
     </div>
 </template>
 <script>
-    import { deepCopy } from '../../date-picker/utils/assist';
-    import Locale from '../../date-picker/mixins/locale';
+    import { deepCopy } from '../utils/assist';
+    import Locale from '../mixins/locale';
     const prefixCls = 'ivu-date-picker-cells';
 
     export default {
@@ -60,7 +60,6 @@
                 ];
             },
             handleClick (event) {
-                debugger;
                 const target = event.target;
                 if (target.tagName === 'EM') {
                     const index = parseInt(event.target.getAttribute('index'));

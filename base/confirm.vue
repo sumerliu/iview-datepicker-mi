@@ -10,7 +10,7 @@
 </template>
 <script>
     import iButton from '../iview-componets/button/button.vue';
-    import Locale from '../../date-picker/mixins/locale';
+    import Locale from '../mixins/locale';
 
     const prefixCls = 'ivu-picker';
 

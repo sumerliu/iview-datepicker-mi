@@ -7,7 +7,8 @@
                 @click="handleShortcutClick(shortcut)">{{ shortcut.text }}</div>
         </div>
         <div :class="[prefixCls + '-body']">
-            <date-type-picker v-model='currentView' @on-pick-type='handleDateType'></date-type-picker>
+            <!-- TODO组件内选择日期类型 -->
+            <!-- <date-type-picker v-model='currentView' @on-pick-type='handleDateType'></date-type-picker> -->
             <div :class="[datePrefixCls + '-header']" v-show="currentView !== 'time'">
                 <span
                     :class="iconBtnCls('prev', '-double')"
@@ -173,7 +174,6 @@
         },
         methods: {
             handleDateType(val){
-                debugger;
                 this.type=val;
                 this.currentView=val;
             },
@@ -261,7 +261,6 @@
                 this.resetDate();
             },
             handleMonthPick (month) {
-                debugger;
                 this.month = month;
                 const selectionMode = 'month';
                 if (selectionMode !== 'month') {
@@ -287,7 +286,6 @@
                 this.resetDate();
             },
             handleWeekPick (value) {
-                debugger;
                 this.value=value;
                 this.$emit('on-pick',value);
                 this.date.setFullYear(this.year);
