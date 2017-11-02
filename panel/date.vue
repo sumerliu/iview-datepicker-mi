@@ -16,7 +16,7 @@
                 <span
                     :class="iconBtnCls('prev')"
                     @click="prevMonth"
-                    v-show="currentView === 'date'"><Icon type="ios-arrow-left"></Icon></span>
+                    v-show="currentView === 'date'||currentView === 'week'"><Icon type="ios-arrow-left"></Icon></span>
                 <span
                     :class="[datePrefixCls + '-header-label']"
                     @click="showYearPicker">{{ yearLabel }}</span>
@@ -30,7 +30,7 @@
                 <span
                     :class="iconBtnCls('next')"
                     @click="nextMonth"
-                    v-show="currentView === 'date'"><Icon type="ios-arrow-right"></Icon></span>
+                    v-show="currentView === 'date'||currentView === 'week'"><Icon type="ios-arrow-right"></Icon></span>
             </div>
             <div :class="[prefixCls + '-content']">
                 <!--<date-table-->
