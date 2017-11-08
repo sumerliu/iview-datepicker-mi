@@ -266,7 +266,7 @@
                 this.$emit('on-pick',value);
                 this.date.setFullYear(this.year);
                 this.date.setMonth(this.month);
-                this.resetDate();
+                // this.resetDate();
             },
             handleTimePick (date) {
                 this.handleDatePick(date);

@@ -126,6 +126,10 @@
             formatter: DATE_FORMATTER,
             parser: DATE_PARSER
         },
+        week: {
+            formatter: RANGE_FORMATTER,
+            parser: DATE_PARSER
+        },
         month: {
             formatter: DATE_FORMATTER,
             parser: DATE_PARSER
@@ -241,6 +245,8 @@
                     return 'month';
                 } else if (this.type === 'year') {
                     return 'year';
+                }else if (this.type === 'week') {
+                    return 'week';
                 }
 
                 return 'day';

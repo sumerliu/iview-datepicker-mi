@@ -7,8 +7,6 @@
                 @click="handleShortcutClick(shortcut)">{{ shortcut.text }}</div>
         </div>
         <div :class="[prefixCls + '-body']">
-            <!-- TODO组件内选择日期类型 -->
-            <!-- <date-type-picker v-model='currentView' @on-pick-type='handleDateType'></date-type-picker> -->
             <div :class="[datePrefixCls + '-header']" v-show="currentView !== 'time'">
                 <span
                     :class="iconBtnCls('prev', '-double')"
@@ -96,7 +94,6 @@
     import TimePicker from './time.vue';
     import WeekTable from '../base/week-table.vue';
     import Confirm from '../base/confirm.vue';
-    import DateTypePicker from '../base/dateTypePicker.vue';
     import Mixin from './mixin';
     import Locale from '../mixins/locale';
 
@@ -108,7 +105,7 @@
     export default {
         name: 'DatePicker',
         mixins: [ Mixin, Locale ],
-        components: { DateTypePicker,Icon, DateTable, YearTable, MonthTable, TimePicker, Confirm ,WeekTable},
+        components: { Icon, DateTable, YearTable, MonthTable, TimePicker, Confirm ,WeekTable},
         data () {
             return {
                 prefixCls: prefixCls,
@@ -118,7 +115,7 @@
                 date: initTimeDate(),
                 value: '',
                 showTime: false,
-                selectionMode: 'day',
+                selectionMode: 'week',
                 disabledDate: '',
                 year: null,
                 month: null,

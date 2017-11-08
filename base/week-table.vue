@@ -91,7 +91,7 @@
                 if (target.tagName === 'SPAN') {
                     cell.selected=true;
                     //把选中的周传给week.vue
-                    this.$emit('on-pick', cell.firstDayOfWeek+'~'+cell.endDayOfWeek);
+                    this.$emit('on-pick', cell.firstDayOfWeek+' - '+cell.endDayOfWeek);
                 }
                 this.$emit('on-pick-click');
             },

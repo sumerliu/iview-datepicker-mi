@@ -1,6 +1,6 @@
 {
   "name": "iview-datepicker-mi",
-  "version": "0.0.8",
+  "version": "0.0.15",
   "description": "This is a datepicker extra components.",
   "main": "index.js",
   "scripts": {
